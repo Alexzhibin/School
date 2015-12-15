@@ -231,10 +231,10 @@ plot(sp_price,type="l",ylim=c(50,2150),ylab="S&P_500 Price",xlab="Days",main="5S
 lines(sim_walmart_10,col=4,lwd=2)
 lines(sim_walgreens_10,col=11,lwd=2)
 lines(sim_verizon_10,col=6,lwd=2)
-lines(sim_Exxon_10,lwd=2,col=7)
+lines(sim_Exxon_10,lwd=2,col=8)
 lines(sim_google_10,,lwd=2,col="red")
 a=legend("left",legend=c('Google',"Walmart","Walgreens","Verizon","Exxon","S&P500"),
-       pt.cex=4,cex=0.75,text.col = c("red",4,11,6,2,"black"),y.intersp=0.8,plot=F)
+       pt.cex=4,cex=0.75,text.col = c("red",4,11,6,8,"black"),y.intersp=0.8,plot=F)
 # box size reduced by factor 0.75
 a=a$rect
 mid = a$top - 0.5*a$h
@@ -244,5 +244,5 @@ reduction = 0.75
 rect(xleft=a$left, ytop=mid+0.5*reduction*a$h, xright=a$left+a$w, ybottom=mid-0.5*reduction*a$h)
 # add legend items to new box
 legend("left",legend=c('Google',"Walmart","Walgreens","Verizon","Exxon","S&P500"),
-       pt.cex=4,cex=0.75,text.col = c("red",4,11,6,2,"black"),y.intersp=0.8,bty='n')
+       pt.cex=4,cex=0.75,text.col = c("red",4,11,6,8,"black"),y.intersp=0.8,bty='n')
 
